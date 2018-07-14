@@ -24,8 +24,12 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn import metrics
 import matplotlib.pyplot as plt
 
-# <center>  Splitting Dataset </center>
+```
 
+# <center> Splitting Datasets </center>
+
+
+```python
 df = pd.read_csv('fake_or_real_news.csv')
 df.shape
 df.head()
@@ -85,9 +89,12 @@ def plot_confusion_matrix(cm, classes,
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
 	
-	# <center> Naive Bayes </center>
+```
 
-    
+# <center> Naive Bayes </center>
+
+
+```python
 clf = MultinomialNB()
 
 clf.fit(tfidf_train, y_train)
@@ -106,10 +113,12 @@ print("accuracy in naive bayes:   %0.3f" % score)
 cm = metrics.confusion_matrix(y_test, pred, labels=['FAKE', 'REAL'])
 plot_confusion_matrix(cm, classes=['FAKE', 'REAL'])
 
+```
 
 # <center> Random Forest Classifier </center>
 
 
+```python
 
 from sklearn.ensemble import RandomForestClassifier
 
@@ -129,9 +138,12 @@ plot_confusion_matrix(cm,
                       cmap = plt.cm.Greens
                      )
 
-# <center> linear support vector machine </center>
+```
+
+# <center> SVM Classifier </center>
 
 
+```python
 
 from sklearn import svm
 
