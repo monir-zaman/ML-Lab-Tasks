@@ -1,26 +1,20 @@
 
+# <center> Dataset -  SFake news detection  
 
-```
 
-# <center> Dataset -  Fake news detection </center>
+</center>
 
 
 """
-Ml lab
+ML Lab
 
- Monir - 2014331055   <br> 
+ Monir - 2014331055
  Tahsin - 2014331066
 """
 
 
+
 ```python
-
-
-
-
-
-
-
 import pandas as pd
 import numpy as np
 import itertools
